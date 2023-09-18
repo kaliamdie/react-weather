@@ -1,13 +1,97 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #343434;
+}
+
+h1 {
+  color: wheat;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.container {
+  background-color: rgb(255, 190, 104);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 50px;
+  outline: none; /* Remove the outline on input focus */
+}
+
+/* Define the icon size without conditions */
+.icon {
+  cursor: pointer;
+  margin-top: 50px;
+  width: 30px;
+  height: 30px;
+  margin-left: 14px;
+  color: white;
+}
+/* button fo the search icon */
+/* button for the search icon */
+button {
+  padding: 10px 20px; /* Adjust padding for a more comfortable button size */
+  margin: 10px 0; /* Remove top and bottom margin, set margin-left and margin-right to center horizontally */
+  text-align: center;
+  background-color: #FFBE68; /* Background color for the button */
+  border: none; /* Remove the default button border */
+  border-radius: 10px; /* Rounded corners for the button */
+  color: #fff; /* Text color */
+  cursor: pointer;
+  font-size: 16px; /* Adjust the font size */
+}
+
+
+
+.center {
+  text-align: center;
+  font-size: 60px;
+}
+
+.vertical {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.forecast,
+.wind {
+  display: inline-flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.icons {
+  width: 50px;
+  margin-left: -60px;
+}
+
+.humidity {
+  width: 50px;
+}
+
+.wind {
+  width: 50px;
+}
+
+p {
+  margin-left: 20px;
 }
